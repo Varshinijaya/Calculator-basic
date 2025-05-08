@@ -1,0 +1,56 @@
+<div class="box"><h1>CALCULATOR</h1>
+<input type="text" placeholder="Number 1" id="num1"><br><br>
+<input type="text" placeholder="Number 2" id="num2"><br><br>
+<button onclick="add()" id="btn">Add</button>
+<button onclick="sub()" id="btn">Sub</button><br><br>
+<button onclick="mul()" id="btn">Mul</button>
+<button onclick="div()" id="btn">Div</button><br><br>
+<h3 id="res">Result is: </h3></div>
+<script>
+    var num1=document.getElementById("num1")
+    var num2=document.getElementById("num2")
+    function add(){
+        var ans=Number(num1.value)+Number(num2.value)
+        res.textContent="Result is "+ans
+    }
+    function sub(){
+        var ans=Number(num1.value)-Number(num2.value)
+        res.textContent="Result is "+ans
+    }
+    function mul(){
+        var ans=Number(num1.value)*Number(num2.value)
+        res.textContent="Result is "+ans
+    }
+    function div(){
+        var ans=Number(num1.value)/Number(num2.value)
+        res.textContent="Result is "+ans
+    }
+</script>
+
+
+<style>
+    body{
+        text-align: center;
+        margin-top: 150px;
+    }
+    #res{
+        border:1px solid black;
+        width:40%;
+        margin-left: 120px;
+       
+    }
+    #btn{
+        background-color: rgb(163, 113, 163);
+        color: white;
+    }
+    .box{
+        background-color: rgb(226, 201, 238);
+        width: 400px;
+        height: 400px;
+        margin-left: 650px;
+       padding-top: 20px;
+       border-radius: 20px;
+       box-shadow: 6px 10px 5px rgb(207, 172, 201);
+    }
+
+</style>
